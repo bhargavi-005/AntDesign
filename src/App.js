@@ -1,4 +1,4 @@
-import { Divider } from 'antd';
+// import { Divider } from 'antd';
 import './App.css';
 import Layout from './layout/divider';
 import Grid from './layout/grid';

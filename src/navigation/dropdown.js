@@ -1,23 +1,41 @@
 import React from 'react';
-import { Dropdown ,Button} from 'antd';
+import { Dropdown ,Space} from 'antd';
 
-const items=[{key:1,lable:(<a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-1st menu item
-</a>)},{key:2,value:(<a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-2st menu item
-</a>)} ]
+const items = [
+    {
+      key: '1',
+      label: (
+        <a >
+          1st menu item
+        </a>
+      ),
+    },
+    {
+      key: '2',
+      label: (
+        <a>
+          2nd menu item (disabled)
+        </a>
+      ),
+    //   icon: <SmileOutlined />,
+    //   disabled: true,
+    }]
 
 function DropdownNavi() {
     return(
         <div>
         <Dropdown
-        menu={{
-          items,
-        }}
-       
-      >
-        <Button>bottom</Button>
-      </Dropdown>  
+    menu={{
+      items,
+     
+    }}
+  >
+    <a>
+      <Space>
+        click
+      </Space>
+    </a>
+  </Dropdown>
 
 
         </div>
